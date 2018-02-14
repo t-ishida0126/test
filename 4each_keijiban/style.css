@@ -8,17 +8,18 @@ h1{
     padding-left:5px;
 }
 
-h3{
-    border-left:4px red solid;
-    padding-left:5px;
-    font-size:20px;
-}
-
 form{
     background-color:#fbfbfb;
     border:3px #ebebeb solid;
     border-radius: 10px;
     width:500px;
+    padding:5px;
+}
+
+form h3{
+    border-left:4px red solid;
+    padding-left:5px;
+    font-size:20px;
 }
 
 form div{
