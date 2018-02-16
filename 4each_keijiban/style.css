@@ -10,13 +10,14 @@ h1{
 
 form{
     background-color:#fbfbfb;
-    border:3px #ebebeb solid;
+    border:2px #ebebeb solid;
     border-radius: 10px;
     width:500px;
     padding:5px;
 }
 
 form h3{
+    margin-left:5px;
     border-left:4px red solid;
     padding-left:5px;
     font-size:20px;
@@ -33,4 +34,27 @@ form div{
     background-color:#bfbfbf;
     border-radius: 5px;
     border-bottom: solid 2px gray;
+}
+
+.contents{
+    border:2px #ebebeb solid;
+    background-color:#fbfbfb;
+    width:500px;
+    border-radius: 10px;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+body div h3{
+    border-bottom:2px #ebebeb solid;
+    margin-left:5px;
+}
+
+.comments{
+    margin-left:5px;
+}
+
+.handlename{
+    font-size:12px;
 }
