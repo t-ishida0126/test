@@ -5,92 +5,92 @@
 <!-- Strutsの詳細設定 -->
 <struts>
 
-<constant name="struts.devMode" value="true" />
+	<constant name="struts.devMode" value="true" />
 
-<!-- 対象のpackageを設定 -->
+	<!-- 対象のpackageを設定 -->
 
-<package name="com.internousdev.template.action" extends="struts-default">
+	<package name="com.internousdev.template.action" extends="struts-default">
 
-<!-- HomeAction -->
-<action name="HomeAction" class="com.internousdev.template.action.HomeAction"
+		<!-- HomeAction -->
+		<action name="HomeAction" class="com.internousdev.template.action.HomeAction"
 
-method="execute">
+			method="execute">
 
-<result name="success">login.jsp</result>
+			<result name="success">login.jsp</result>
 
-</action>
-<!-- LoginAction -->
-<action name="LoginAction" class="com.internousdev.template.action.LoginAction"
+		</action>
+		<!-- LoginAction -->
+		<action name="LoginAction" class="com.internousdev.template.action.LoginAction"
 
-method="execute">
+			method="execute">
 
-<result name="success">buyItem.jsp</result>
-<result name="error">home.jsp</result>
+			<result name="success">buyItem.jsp</result>
+			<result name="error">home.jsp</result>
 
-</action>
-<!-- UserCreateAction -->
-<action name="UserCreateAction"
+		</action>
+		<!-- UserCreateAction -->
+		<action name="UserCreateAction"
 
-class="com.internousdev.template.action.UserCreateAction" method="execute">
-<result name="success">userCreate.jsp</result>
-<result name="back">login.jsp</result>
+			class="com.internousdev.template.action.UserCreateAction" method="execute">
+			<result name="success">userCreate.jsp</result>
+			<result name="back">login.jsp</result>
 
-</action>
-<!-- UserCreateConfirmAction -->
-<action name="UserCreateConfirmAction"
+		</action>
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction"
 
-class="com.internousdev.template.action.UserCreateConfirmAction" method="execute">
-<result name="success">userCreateConfirm.jsp</result>
-<result name="error">userCreate.jsp</result>
+			class="com.internousdev.template.action.UserCreateConfirmAction"
+			method="execute">
+			<result name="success">userCreateConfirm.jsp</result>
+			<result name="error">userCreate.jsp</result>
 
-</action>
-<!-- UserCreateCompleteAction -->
-<action name="UserCreateCompleteAction"
+		</action>
+		<!-- UserCreateCompleteAction -->
+		<action name="UserCreateCompleteAction"
 
-class="com.internousdev.template.action.UserCreateCompleteAction" method="execute">
-<result name="success">userCreateComplete.jsp</result>
+			class="com.internousdev.template.action.UserCreateCompleteAction"
+			method="execute">
+			<result name="success">userCreateComplete.jsp</result>
 
-</action>
-<!-- BuyItemAction -->
-<action name="BuyItemAction"
+		</action>
+		<!-- BuyItemAction -->
+		<action name="BuyItemAction" class="com.internousdev.template.action.BuyItemAction"
+			method="execute">
+			<result name="success">buyItemConfirm.jsp</result>
+			<result name="error">buyItem.jsp</result>
 
-class="com.internousdev.template.action.BuyItemAction" method="execute">
-<result name="success">buyItemConfirm.jsp</result>
-<result name="error">buyItem.jsp</result>
+		</action>
+		<!-- BuyItemConfirmAction -->
+		<action name="BuyItemConfirmAction"
 
-</action>
-<!-- BuyItemConfirmAction -->
-<action name="BuyItemConfirmAction"
+			class="com.internousdev.template.action.BuyItemConfirmAction" method="execute">
+			<result name="success">buyItemComplete.jsp</result>
+			<result name="back">buyItem.jsp</result>
 
-class="com.internousdev.template.action.BuyItemConfirmAction" method="execute">
-<result name="success">buyItemComplete.jsp</result>
-<result name="back">buyItem.jsp</result>
+		</action>
+		<!-- BuyItemCompleteAction -->
+		<action name="BuyItemCompleteAction"
 
-</action>
-<!-- BuyItemCompleteAction -->
-<action name="BuyItemCompleteAction"
+			class="com.internousdev.template.action.BuyItemCompleteAction"
+			method="execute">
 
-class="com.internousdev.template.action.BuyItemCompleteAction" method="execute">
+			<result name="success">home.jsp</result>
 
-<result name="success">home.jsp</result>
+		</action>
+		<!-- MyPageAction -->
+		<action name="MyPageAction" class="com.internousdev.template.action.MyPageAction"
+			method="execute">
+			<result name="success">myPage.jsp</result>
 
-</action>
-<!-- MyPageAction -->
-<action name="MyPageAction"
+		</action>
+		<!-- LogoutAction -->
+		<action name="LogoutAction" class="com.internousdev.template.action.LogoutAction"
+			method="execute">
 
-class="com.internousdev.template.action.MyPageAction" method="execute">
-<result name="success">myPage.jsp</result>
+			<result name="success">home.jsp</result>
 
-</action>
-<!-- LogoutAction -->
-<action name="LogoutAction"
+		</action>
 
-class="com.internousdev.template.action.LogoutAction" method="execute">
-
-<result name="success">home.jsp</result>
-
-</action>
-
-</package>
+	</package>
 
 </struts>
